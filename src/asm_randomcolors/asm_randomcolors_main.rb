@@ -1,3 +1,4 @@
+#Please see the loader file for information on the license and author info.
 module ASM_Extensions
   module RandomColors
     require FILE_DATA
