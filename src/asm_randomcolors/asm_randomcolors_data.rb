@@ -28,7 +28,7 @@ module ASM_Extensions
       end
 
       # Ask the user how many colors they want in the palette
-      num_colors = UI.inputbox(["How many colors in the palette?"], [8], ["Enter a number"])[0]
+      num_colors = UI.inputbox(["How many colors in the palette? "], [8], [], "Random Colors")[0]
 
       # Convert the user input to an integer and ensure it is greater than zero
       num_colors = num_colors.to_i

@@ -10,7 +10,7 @@ module ASM_Extensions
   end
 
   if !defined?(@randomcolors_loaded)
-    @asm_tools_menu.add_item(RandomColors::PLUGIN_NAME) { RandomColors.appy_randomcolors }
+    @asm_tools_menu.add_item(RandomColors::PLUGIN_NAME) { RandomColors.apply_randomcolors }
     @randomcolors_loaded = true
   end # module RandomColors
 end # module ASM_Extensions
