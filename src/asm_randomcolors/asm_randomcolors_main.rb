@@ -1,17 +1,16 @@
-#Please see the loader file for information on the license and author info.
+# Please see the loader file for information on the license and author info.
 module ASM_Extensions
   module RandomColors
     require FILE_DATA
   end # module RandomColors
 
-  if !file_loaded?('asm_menu_loader')
-    @@asm_tools_menu = UI.menu("Extensions").add_submenu("ASM Tools")
+  if !defined?(@asm_tools_menu_loaded)
+    @asm_tools_menu = UI.menu("Extensions").add_submenu("ASM Tools")
+    @asm_tools_menu_loaded = true
   end
 
-  if !file_loaded?(__FILE__)
-    @@asm_tools_menu.add_item(RandomColors::PLUGIN_NAME) { RandomColors.appy_random_colors }
-  end
-
-  file_loaded('asm_menu_loader')
-  file_loaded(__FILE__)
+  if !defined?(@randomcolors_loaded)
+    @asm_tools_menu.add_item(RandomColors::PLUGIN_NAME) { RandomColors.appy_randomcolors }
+    @randomcolors_loaded = true
+  end # module RandomColors
 end # module ASM_Extensions

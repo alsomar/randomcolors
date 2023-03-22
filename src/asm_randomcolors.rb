@@ -5,7 +5,7 @@ module ASM_Extensions
 
     # Constants
     PLUGIN_NAME = 'Random Colors'.freeze
-    PLUGIN_VERSION = '1.0.1'.freeze
+    PLUGIN_VERSION = '1.0.2'.freeze
     PLUGIN_DESCRIPTION = 'Apply random colors to the selected faces, groups or components.'.freeze
     PLUGIN_AUTHOR = 'Alejandro Soriano'.freeze
     PLUGIN_ID = File.basename(__FILE__, '.rb')
